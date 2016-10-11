@@ -2,6 +2,12 @@
 
 var express = require('express');
 var mock = express();
+if(true) {
+    mock.use(function (request, response, next) {
+        console.log("[" + request.method + "]   " + request.path);
+    });
+}
+
 var topicRouter = require('./lib/routes/topics');
 var journalRouter = require('./lib/routes/journals');
 
