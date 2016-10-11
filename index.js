@@ -12,7 +12,7 @@ mock.use(journalRouter.path, journalRouter);
 
 
 
-mock.all(function (request, response) {
+mock.use(function (request, response) {
    response.json({
        topics: {
            root: topicRouter.path,
