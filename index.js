@@ -10,4 +10,4 @@ mock.use(topicRouter.path, topicRouter);
 mock.use(journalRouter.path, journalRouter);
 
 
-mock.listen(3000);
+module.exports = mock;
